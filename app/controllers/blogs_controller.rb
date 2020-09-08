@@ -1,6 +1,4 @@
 class BlogsController < ApplicationController
-  def index
-  end
 
   def new
     @blog = Blog.new
@@ -14,7 +12,6 @@ class BlogsController < ApplicationController
       render :new
     end
   end
-
 
   private
   def blog_params
